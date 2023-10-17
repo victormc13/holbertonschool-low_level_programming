@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc $GCC_OPTIONS $CFILE -o cisfun
