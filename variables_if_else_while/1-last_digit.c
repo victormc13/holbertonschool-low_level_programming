@@ -26,6 +26,6 @@ int main(void)
 		printf("%s%i is %i and is less than 6 and not 0\n", message, n, last_digit);
 	}
 	else
-		printf("%s%i and is 0\n", message, n);
+		printf("%s%i is %i and is 0\n", message, n, last_digit);
 	return (0);
 }
