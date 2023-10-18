@@ -23,7 +23,7 @@ int main(void)
 					putchar(tens2 + '0');
 					putchar(ones2 + '0');
 
-					if (!(tens1 == 9 && ones1 == 9 && tens2 == 9 && ones2 == 9))
+					if (!(tens1 == 9 && ones1 == 8 && tens2 == 9 && ones2 == 9))
 					{
 						putchar(',');
 						putchar(' ');
