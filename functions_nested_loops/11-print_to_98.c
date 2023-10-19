@@ -19,7 +19,7 @@ void print_to_98(int n)
 			n++;
 		}
 
-	_putchar('\n');
+	/*_putchar('\n');*/
 	}
 	else
 	{
@@ -31,6 +31,6 @@ void print_to_98(int n)
 			n--;
 		}
 
-	_putchar('\n');
+	/*_putchar('\n');*/
 	}
 }
