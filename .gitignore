@@ -1,0 +1,4 @@
+# Files ignored by the VCS (git)
+
+#Function to print a single character
+_putchar.c
