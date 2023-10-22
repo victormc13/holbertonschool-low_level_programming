@@ -11,7 +11,7 @@ int _isupper(int c)
 {
 	int uppercase;
 
-	if (c >= 'A')
+	if (c >= 'A' && c <= 'Z')
 		uppercase = 1;
 	else
 		uppercase = 0;
