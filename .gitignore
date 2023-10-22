@@ -2,3 +2,10 @@
 
 #Function to print a single character
 _putchar.c
+
+#C files
+main.c
+school.c
+
+#Header files
+m.h
