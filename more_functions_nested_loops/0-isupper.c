@@ -9,11 +9,11 @@
 
 int _isupper(int c)
 {
-	int uppercase;
+	int uppercase = 0;
 
 	if (c >= 'A')
 		uppercase = 1;
-	uppercase = 0;
+
 	return (uppercase);
 }
 
