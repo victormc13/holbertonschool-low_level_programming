@@ -12,10 +12,10 @@ int _isdigit(int c)
 	int digit;
 
 	if (c >= '0' && c <= '9')
-		uppercase = 1;
+		digit = 1;
 	else
-		uppercase = 0;
+		digit = 0;
 
-	return (uppercase);
+	return (digit);
 }
 
