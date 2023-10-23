@@ -3,21 +3,21 @@
 
 /**
  * print_diagonal - Prints a square, followed by a new line.
- * @size: size of the square
+ * @n: times the character '\' should be printed
  * Return: Nothing
  */
 
-void print_diagonal(int size)
+void print_diagonal(int n)
 {
 	int i, j;
 
-	if (size <= 0)
+	if (n <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		for (i = 0; i < size; i++)
+		for (i = 0; i < n; i++)
 		{
 			for (j = 0; j < i; j++)
 			{
