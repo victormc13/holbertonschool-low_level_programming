@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * fizz_buzz - Prints numbers following the FizzBuzz test
+ * main - Prints numbers following the FizzBuzz test
  * Return: Nothing
  */
 
-void fizz_buzz(void)
+int main(void)
 {
 	int i;
 
@@ -29,4 +29,5 @@ void fizz_buzz(void)
 			printf("%i", i);
 		}
 	}
+	return (0);
 }
