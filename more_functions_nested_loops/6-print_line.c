@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 
+/**
+ * print_line - Draws a straight line in terminal
+ * @n: number of times that '_' should be printed
+ * Return: Nothing
+ */
+
 void print_line(int n)
 {
 	int i;
