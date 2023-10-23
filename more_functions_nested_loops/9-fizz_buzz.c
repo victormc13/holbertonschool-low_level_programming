@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * fizz_buzz - Prints numbers following the FizzBuzz test
