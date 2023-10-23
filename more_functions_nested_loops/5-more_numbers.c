@@ -22,10 +22,8 @@ void more_numbers(void)
 				_putchar('0' + (k % 10));
 				k /= 10;
 			}
-			
 			j++;
 		}
-		
 		_putchar('\n');
 		i++;
 	}
