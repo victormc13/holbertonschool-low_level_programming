@@ -30,7 +30,7 @@ int is_prime_helper(int n, int i)
 	}
 	if (n % i == 0)
 	{
-		return (0)
+		return (0);
 	}
 	if (i * i > n)
 	{
