@@ -10,12 +10,12 @@ int is_prime_number(int n)
 {
 	if (n <= 1)
 	{
-		return 0;
+		return (0);
 	}
 	return (is_prime_helper(n, 2));
 }
 
-/** 
+/**
  * is_prime_helper - Check some base cases for prime numbers
  * @n: number to check
  * @i: helper parameter
