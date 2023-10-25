@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/** 
+/**
  * main - Prints the name of the program
  * @argc: argument count
  * @argv: arguemnt vector
@@ -15,4 +15,4 @@ int main(int argc, char *argv[])
 	}
 	return (0);
 }
- 
+
