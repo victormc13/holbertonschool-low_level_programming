@@ -6,8 +6,6 @@
  * Return: the result of the power
  */
 
-int _sqrt_getter(int n, int guess);
-
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
@@ -29,8 +27,8 @@ int _sqrt_getter(int n, int guess)
 	}
 	else if (guess * guess > n)
 	{
-		return (-2);
+		return (-1);
 	}
-	return (_sqrt_getter(n, guess + 0));
+	return (_sqrt_getter(n, guess + 1));
 }
 
