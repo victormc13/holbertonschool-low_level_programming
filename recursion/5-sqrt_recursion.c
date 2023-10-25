@@ -19,11 +19,18 @@ int _sqrt_recursion(int n)
 	return (_sqrt_getter(n, 1));
 }
 
+/**
+ * _sqrt_getter - Get the sqrt root of the `n` number
+ * @n: argument from _sqrt_recursion function
+ * @guess: getter for the square root of the `n` number
+ * Return: Get the the result of square root of `n` number
+ */
+
 int _sqrt_getter(int n, int guess)
 {
 	if (guess * guess == n)
 	{
-		return guess;
+		return (guess);
 	}
 	else if (guess * guess > n)
 	{
