@@ -9,4 +9,8 @@ int factorial(int n);
 int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
 
+
+// helper function
+int _sqrt_getter(int n, int guess); 
+
 #endif
