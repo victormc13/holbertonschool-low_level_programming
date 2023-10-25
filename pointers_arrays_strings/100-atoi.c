@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <limits.h>
 #include "main.h"
 
 /**
@@ -27,11 +29,10 @@ int _atoi(char *s)
 
 	while (*s >= '0' && *s <= '9')
 	{
-		if (result > (result * 10 + (*s - '0')))
+		if (result > INT_MAX / 10 || (result == INT_MAX / 10 && (*s - '0') > INT_MAX % 10))
 		{
-			return (0);
+			return ((sign == 1) ? INT_MAX : INT_MIN);
 		}
-
 		result = result * 10 + (*s - '0');
 		s++;
 	}
