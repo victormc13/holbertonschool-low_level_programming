@@ -21,17 +21,20 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	if (cents < 0)
+	else
 	{
-		printf("0\n");
-		return (0);
-	}
-	for (i = 0; i < 5; i++)
-	{
-		while (cents >= coins[i])
+		if (cents < 0)
 		{
-			cents -= coins[i];
-			num_of_coins++;
+			printf("0\n");
+			return (0);
+		}
+		for (i = 0; i < 5; i++)
+		{
+			while (cents >= coins[i])
+			{	
+				cents -= coins[i];
+				num_of_coins++;
+			}
 		}
 	}
 
