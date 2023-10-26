@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	int num_of_coins = 0;
 	int i;
 
-	if (argc != 2)
+	if (argc > 1)
 	{
 		printf("Error\n");
 		return (1);
