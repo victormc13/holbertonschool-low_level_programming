@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 		}
 
 		num = atoi(arg);
-		
+
 		if (num > 0)
 		{
 			sum += num;
@@ -45,6 +45,12 @@ int main(int argc, char *argv[])
 	printf("%d\n", sum);
 	return (0);
 }
+
+/**
+ * is_digit - Checks if a char if a digit
+ * @c: character to be cheked
+ * Return: 1 if is a digit, otherwise 0
+ */
 
 int is_digit(char c)
 {
