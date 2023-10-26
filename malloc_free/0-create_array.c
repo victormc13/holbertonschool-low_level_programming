@@ -22,13 +22,10 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	else
+	while (counter < size)
 	{
-		while (counter < size)
-		{
-			ptr[counter] = c;
-			counter++;
-		}
+		ptr[counter] = c;
+		counter++;
 	}
 	return (ptr);
 }
