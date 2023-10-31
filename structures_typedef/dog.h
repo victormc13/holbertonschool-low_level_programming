@@ -1,10 +1,10 @@
 /**
- * struct my_struct - Short description
- * @a: First member
- * @b: Second member
- *
- * Description: Longer description
+ * struct dog - A type struct dog
+ * @name: Name of dog
+ * @age: Age of the dog
+ * @owner: Owner of the dog
  */
+
 struct dog
 {
 	char *name;
