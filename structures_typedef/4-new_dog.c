@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include "dog.h"
 
+/* copy_string function prototype*/
+char *copy_string(char *str);
+
 /**
  * new_dog - Creates a new dog
  * @name: name for the new dog struct type dog_t
