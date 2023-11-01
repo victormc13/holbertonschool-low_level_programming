@@ -50,12 +50,12 @@ char *copy_string(char *str)
 	int i = 0;
 
 	if (str == NULL) return (NULL);
-	
+
 	while (str[length] != '\0')
 	{
 		length++;
 	}
-	
+
 	copy = malloc(length + 1);
 	if (copy == NULL) return (NULL);
 
