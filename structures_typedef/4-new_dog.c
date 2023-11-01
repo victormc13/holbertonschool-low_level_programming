@@ -49,7 +49,8 @@ char *copy_string(char *str)
 	char *copy;
 	int i = 0;
 
-	if (str == NULL) return (NULL);
+	if (str == NULL)
+		return (NULL);
 
 	while (str[length] != '\0')
 	{
@@ -57,7 +58,8 @@ char *copy_string(char *str)
 	}
 
 	copy = malloc(length + 1);
-	if (copy == NULL) return (NULL);
+	if (copy == NULL)
+		return (NULL);
 
 	while (i < length)
 	{
