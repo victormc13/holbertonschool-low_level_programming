@@ -32,3 +32,35 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new_dog->age = age;
 	return (new_dog);
 }
+
+/**
+ * copy_string - Copy and allocate memory for string that receives as parameter
+ * @str: String pass as parameter
+ * Return: copy
+ */
+
+char *copy_string(char *str)
+{
+        int length = 0;
+        char *copy;
+        int i = 0;
+
+        if (str == NULL) return (NULL);
+
+        while (str[length] != '\0')
+        {
+                length++;
+        }
+
+        copy = malloc(length + 1);
+        if (copy == NULL) return (NULL);
+
+        while (i < length)
+        {
+                copy[i] = str[i];
+                i++;
+        }
+        copy[length] = '\0';
+
+        return (copy);
+}
