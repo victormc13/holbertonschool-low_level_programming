@@ -10,6 +10,7 @@ char *copy_string(char *str);
  * @name: name for the new dog struct type dog_t
  * @age: age for the new dog struct type dog_t
  * @owner: owner for the new dog struct type dog_t
+ * Return: new_dog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -44,26 +45,25 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 char *copy_string(char *str)
 {
-        int length = 0;
-        char *copy;
-        int i = 0;
+	int length = 0;
+	char *copy;
+	int i = 0;
 
-        if (str == NULL) return (NULL);
+	if (str == NULL) return (NULL);
+	
+	while (str[length] != '\0')
+	{
+		length++;
+	}
+	
+	copy = malloc(length + 1);
+	if (copy == NULL) return (NULL);
 
-        while (str[length] != '\0')
-        {
-                length++;
-        }
-
-        copy = malloc(length + 1);
-        if (copy == NULL) return (NULL);
-
-        while (i < length)
-        {
-                copy[i] = str[i];
-                i++;
-        }
-        copy[length] = '\0';
-
-        return (copy);
+	while (i < length)
+	{
+		copy[i] = str[i];
+		i++;
+	}
+	copy[length] = '\0';
+	return (copy);
 }
