@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include "3-calc.h"
 
+/**
+ * main - Executes arithmetic operations with arguments from the command line
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: 0
+ */
+
 int main(int argc, char *argv[])
 {
 	int num1;
