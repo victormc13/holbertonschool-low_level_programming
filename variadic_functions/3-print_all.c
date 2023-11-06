@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdarg.h>
+
+/**
+ * print_all - Function that prints anything
+ * @format: list of types of arguments passed to the function
+ * Return: void
+ */
+
+void print_all(const char * const format, ...)
+{
+	va_list ap;
+	int i = 0;
+	char *str;
+
+	va_start(ap, format);
+
+	while (format && format[i])
+	{
+		switch(format[i])
+		{
+			case 'c':
+				printf("%c", va_arg(ap, char));
+				break;
+			case 'i':
+				printf("%d", va_arg(ap, int));
+				break;
+			case 'f':
+				printf("%f", va_arg(ap, float));
+			case 's':
+				{
+					str = va_arg(ap, char *);
+					if (str == NULL)
+						str = "(nil)";
+
+					printf( "%s", str);
+				}
+				break;
+			default:
+				break;
+		}
+		i++;
+	}
+	va_end(ap);
+	printf("\n");
+}
+
