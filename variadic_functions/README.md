@@ -33,3 +33,11 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called `variadic_functions.h`
 * Don’t forget to push your header file
 * All your header files should be include guarded
+
+## Tasks
+
+### 0-sum_them_all.c
+Write a function that returns the sum of all its parameters.
+
+Prototype: `int sum_them_all(const unsigned int n, ...);`
+If `n == 0`, return `0`
